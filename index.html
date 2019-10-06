@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>First Cube html page</title>
+        <link href="CSS/index.css" type="text/css" rel = "stylesheet">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <p class="openingShot">Welcome to All Things Cube!</p>
+        <p>Eventually this site will support at least three notation systems for algorithms:</p>
+        <select>
+            <option>The one I know</option>
+            <option>The Asian one I heard about</option>
+            <option>Other ones</option>
+        </select>
+        <div>
+            <p>Please click to enter your algorithm: </p>
+            <button onclick="BuildAlg('R')";>R</button>
+            <button onclick="BuildAlg('R\'')";>R'</button>
+            <button onclick="BuildAlg('U')">U</button>
+            <button onclick="BuildAlg('U\'')">U'</button>
+            <button>done</button>
+        </div>
+        <div>
+            <p>Now, click to enter your cell, and we will check out whether the cell is contained in your algorithm: </p>
+            <button onclick="BuildCell('R')";>R</button>
+            <button onclick="BuildCell('R\'')";>R'</button>
+            <button onclick="BuildCell('U')">U</button>
+            <button onclick="BuildCell('U\'')">U'</button>
+            <button>no really, I'm done</button>
+           
+        </div>
+            <p></p>
+            <p></p>
+            <span>Your Algorithm:    </span>
+            <span id="spanAlg"></span>
+            <br>
+
+            <span>Your Cell:    </span>
+            <span id="spanCell"></span>
+
+    </body>
+</html>
